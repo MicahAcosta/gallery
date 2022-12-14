@@ -1,4 +1,11 @@
-pipeline{
-  tools any
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        echo 'echo "hello word"'
+      }
+    }
 
+  }
 }
